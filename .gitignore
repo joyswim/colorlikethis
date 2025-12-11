@@ -6,15 +6,14 @@ logs
 .pnpm-debug.log*
 .pnp.*
 
-/node_modules
+node_modules/
+dist/
+build/
+.next/
+coverage/
+
 package-lock.json
-
-/dist
-/build
-/.next
-
 .eslintcache
 
-/coverage
-
 .DS_Store
+*.code-workspace
