@@ -1,0 +1,18 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "all",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "files.insertFinalNewline": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always",
+    "source.fixAll.eslint": "always"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
