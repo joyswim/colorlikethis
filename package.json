@@ -1,26 +1,22 @@
 {
-  "name": "colorlikethis",
-  "version": "0.1.0",
-  "private": true,
+  "name": "colorlikethis-repo",
+  "version": "1.0.0",
+  "description": "colorlikethis-monorepo",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "front:dev": "pnpm --filter @apps/frontend dev",
+    "front:build": "pnpm --filter @apps/frontend build",
+    "front:start": "pnpm --filter @apps/frontend start",
+    "front:lint": "pnpm --filter @apps/frontend lint",
+    "back:dev": "pnpm --filter @apps/backend dev",
+    "design-system": "pnpm --filter @workspace/design-system",
+    "start": "pnpm front:dev & pnpm back:dev"
   },
-  "dependencies": {
-    "next": "16.0.3",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
-  },
+  "keywords": [],
+  "author": "Suyoung Shin",
+  "license": "ISC",
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.3",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  }
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.25.0"
 }
